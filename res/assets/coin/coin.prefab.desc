@@ -1,0 +1,1 @@
+{"__type":"prefab_desc","__version":3,"__id":"0bdaf091196bd10c","children":[{"__id":"333d06f0445c5414","name":"mesh_coin","components":{"mesh_node_desc":{"__type":"mesh_node_desc","__version":1,"geometry":"res://assets/coin/coin.geom.desc","vx_begin":0,"vx_end":392,"ind_begin":0,"ind_end":756,"material":"res://assets/coin/materials/colormap.mat.desc"}}}]}

@@ -1,6 +1,7 @@
 {
     "__type" : "level_desc",
     "__version" : 2,
+    "__guid" : "99e89dc9-6698-48c1-a004-fde399c0331b",
     "name" : "main",
     "worlds" : [
         {
@@ -14,7 +15,8 @@
                 "scn::depth_system",
                 "scn::transform_system",
                 "scn::animation_system_matrix",
-                "scn::update_camera_matrix_system"
+                "scn::update_camera_matrix_system",
+                "crystal_run::update"
             ],
             "__id" : "cbf29ce484222325",
             "components" : {
@@ -30,8 +32,170 @@
                     "components" : {
                         "Directional Light" : {
                             "__type" : "directional_light_desc",
-                            "__version" : 1
+                            "__version" : 1,
+                            "direction" : [-0.4, -0.8, -0.3, 0],
+                            "diffuse" : [1, 0.88, 0.7, 1],
+                            "ambient" : [0.22, 0.28, 0.4, 1],
+                            "specular" : [1, 0.95, 0.85, 1]
                         }
+                    }
+                },
+                {
+                    "__id" : "7e4e5ae8e64c2531",
+                    "name" : "Mountain Lake Environment",
+                    "components" : {
+                        "skybox" : {
+                            "__type" : "skybox_desc",
+                            "__version" : 1,
+                            "material" : "res://skybox/sky_material.desc"
+                        }
+                    }
+                },
+                {
+                    "__id" : "8a4d32119cc0908e",
+                    "name" : "Game Camera",
+                    "transform" : {
+                        "position" : [0.0, 0.0, 2.0]
+                    },
+                    "components" : {
+                        "camera" : {
+                            "__type" : "camera_desc",
+                            "__version" : 1,
+                            "fov" : 60,
+                            "near_distance" : 0.05,
+                            "far_distance" : 1000
+                        }
+                    }
+                },
+                {
+                    "__id" : "dbb7e702e1f4ad56",
+                    "name" : "Player",
+                    "transform" : {
+                        "position" : [0.0, 0.6499999761581421, 5.5],
+                        "scale" : [0.6499999761581421, 0.6499999761581421, 0.6499999761581421]
+                    },
+                    "components" : {
+                        "character.prefab" : "res://assets/character/character.prefab.desc"
+                    }
+                },
+                {
+                    "__id" : "13ad1915b85990ed",
+                    "name" : "Crystal0",
+                    "transform" : {
+                        "position" : [-5.800000190734863, 0.949999988079071, 4.199999809265137],
+                        "scale" : [0.6499999761581421, 0.6499999761581421, 0.6499999761581421]
+                    },
+                    "components" : {
+                        "coin.prefab" : "res://assets/coin/coin.prefab.desc"
+                    }
+                },
+                {
+                    "__id" : "ae7b61f629b3eca3",
+                    "name" : "Crystal4",
+                    "transform" : {
+                        "position" : [-4.800000190734863, 0.949999988079071, -5.0],
+                        "scale" : [0.6499999761581421, 0.6499999761581421, 0.6499999761581421]
+                    },
+                    "components" : {
+                        "coin.prefab" : "res://assets/coin/coin.prefab.desc"
+                    }
+                },
+                {
+                    "__id" : "3609dc908a611b17",
+                    "name" : "Crystal3",
+                    "transform" : {
+                        "position" : [5.400000095367432, 0.949999988079071, -3.799999952316284],
+                        "scale" : [0.6499999761581421, 0.6499999761581421, 0.6499999761581421]
+                    },
+                    "components" : {
+                        "coin.prefab" : "res://assets/coin/coin.prefab.desc"
+                    }
+                },
+                {
+                    "__id" : "cc96b99cbd7c48cb",
+                    "name" : "Crystal2",
+                    "transform" : {
+                        "position" : [-5.300000190734863, 0.949999988079071, -0.800000011920929],
+                        "scale" : [0.6499999761581421, 0.6499999761581421, 0.6499999761581421]
+                    },
+                    "components" : {
+                        "coin.prefab" : "res://assets/coin/coin.prefab.desc"
+                    }
+                },
+                {
+                    "__id" : "03abec98c19ce022",
+                    "name" : "Crystal1",
+                    "transform" : {
+                        "position" : [5.800000190734863, 0.949999988079071, 3.799999952316284],
+                        "scale" : [0.6499999761581421, 0.6499999761581421, 0.6499999761581421]
+                    },
+                    "components" : {
+                        "coin.prefab" : "res://assets/coin/coin.prefab.desc"
+                    }
+                },
+                {
+                    "__id" : "585ac4be5bf9da61",
+                    "name" : "Arena",
+                    "transform" : {
+                        "position" : [0.0, -0.5, 0.0],
+                        "scale" : [3.1600000858306885, 1.0, 2.359999895095825]
+                    },
+                    "components" : {
+                        "platform-large.prefab" : "res://assets/platform-large/platform-large.prefab.desc"
+                    }
+                },
+                {
+                    "__id" : "51e573721ccc6cdd",
+                    "name" : "Arena Wall Near",
+                    "transform" : {
+                        "position" : [0.0, 0.0, 5.699999809265137],
+                        "scale" : [3.1600000858306885, 0.800000011920929, 0.07999999821186066]
+                    },
+                    "components" : {
+                        "platform-large.prefab" : "res://assets/platform-large/platform-large.prefab.desc"
+                    }
+                },
+                {
+                    "__id" : "51393c2c77d0dcd7",
+                    "name" : "Arena Wall Far",
+                    "transform" : {
+                        "position" : [0.0, 0.0, -5.699999809265137],
+                        "scale" : [3.1600000858306885, 0.800000011920929, 0.07999999821186066]
+                    },
+                    "components" : {
+                        "platform-large.prefab" : "res://assets/platform-large/platform-large.prefab.desc"
+                    }
+                },
+                {
+                    "__id" : "cacafca0f8b3f0c5",
+                    "name" : "Arena Wall Right",
+                    "transform" : {
+                        "position" : [7.699999809265137, 0.0, 0.0],
+                        "scale" : [0.07999999821186066, 0.800000011920929, 2.359999895095825]
+                    },
+                    "components" : {
+                        "platform-large.prefab" : "res://assets/platform-large/platform-large.prefab.desc"
+                    }
+                },
+                {
+                    "__id" : "75a426c272f6d475",
+                    "name" : "Arena Wall Left",
+                    "transform" : {
+                        "position" : [-7.699999809265137, 0.0, 0.0],
+                        "scale" : [0.07999999821186066, 0.800000011920929, 2.359999895095825]
+                    },
+                    "components" : {
+                        "platform-large.prefab" : "res://assets/platform-large/platform-large.prefab.desc"
+                    }
+                },
+                {
+                    "__id" : "a0eedb5f63d19eae",
+                    "name" : "ExitSignal",
+                    "transform" : {
+                        "position" : [0.0, 0.0, -5.800000190734863]
+                    },
+                    "components" : {
+                        "flag.prefab" : "res://assets/flag/flag.prefab.desc"
                     }
                 }
             ]
