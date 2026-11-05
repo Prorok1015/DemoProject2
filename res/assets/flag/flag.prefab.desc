@@ -1,0 +1,1 @@
+{"__type":"prefab_desc","__version":3,"__id":"d5f2d079088c0b17","children":[{"__id":"3c58fa682b5b2ee8","name":"mesh_flag","components":{"mesh_node_desc":{"__type":"mesh_node_desc","__version":1,"geometry":"res://assets/flag/flag.geom.desc","vx_begin":0,"vx_end":232,"ind_begin":0,"ind_end":396,"material":"res://assets/flag/materials/colormap.mat.desc"}}}]}
