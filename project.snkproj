@@ -1,0 +1,16 @@
+{
+    "format_version": 1,
+    "name": "DemoProject2",
+    "engine_version": "0.2.0",
+    "start_scene": "res://levels/main.desc",
+    "content_roots": [
+        "res"
+    ],
+    "modules": [
+        {
+            "name": "game",
+            "kind": "runtime",
+            "optional": true
+        }
+    ]
+}
